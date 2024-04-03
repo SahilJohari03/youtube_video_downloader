@@ -19,6 +19,7 @@ def download():
 
     url = YouTube(str(link.get()))
 
+    
     video = url.streams.get_highest_resolution()
 
     video.download()
